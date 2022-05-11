@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>PseudoCaracteristicas Pablo R</title>
+        <style>
+            body{
+                background-color: gray;
+            }
+
+            .caja::first-letter{
+                font-size: 200%;
+                font-weight:bold;
+                font-style: italic;
+            }
+
+            .caja:nth-child(2n+1){
+                background-color: whitesmoke;
+            }
+
+            div:nth-child(2n){
+                background-color: darkgray;
+            }
+
+            .ref::after{
+                content: "...";
+            }
+
+            p + p{
+                text-indent: 12px;
+                margin-top: 0 
+            }
+
+            p {
+                margin-bottom: 0
+             }
+
+             .contenido{
+             background-color:rgb(37, 173, 167);
+             width:300px;
+             padding: 10px 20px;
+             margin: 20% auto;
+             position: relative;
+             color: aquamarine;
+            }
+            .modal{
+            background-color: rgba(0,0,0,.8);
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            opacity:0;
+            pointer-events:none;
+            transition: all 1s;
+            }   
+            #miModal:target{
+            opacity:1;
+            pointer-events:auto;
+            }
+          
+            #abrir{
+                background-color: crimson;
+                text-decoration: none;
+                color: black;
+                border-radius: 30%;
+                border: solid;
+                border-color: black;
+                border-width: 1px;
+                margin: auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <p>SOLDADITO MARINERO </p>
+
+    <div id="caja1" class="caja">
+        <p>Él camina despacito que las prisas no son buenas</p>
+        <p>En su brazo dobladita, con cuidado la chaqueta</p>
+        <p>Luego pasa por la calle dónde los chavales juegan</p>
+        <p class="ref">Él también quiso ser niño pero le pilló la guerra</p>
+    </div>
+
+    <div id="caja2" class="caja">
+        <p>Soldadito marinero conociste a una sirena</p>
+        <p>De esas que dicen te quiero si ven la cartera llena</p>
+        <p>Escogiste a la más guapa y a la menos buena</p>
+        <p class="ref">Sin saber como ha venido te ha cogido la tormenta</p>
+    </div>
+
+    <div id="caja3" class="caja">
+        <p>Él quería cruzar los mares y olvidar a su sirena</p>
+        <p>La verdad, no fue difícil cuando conoció a Mariela</p>
+        <p>Que tenía los ojos verdes y un negocio entre las piernas</p>
+        <p class="ref">Hay que ver que puntería, no te arrimas a una buena</p>
+    </div>
+
+    <div id="caja4" class="caja">
+        <p>Soldadito marinero conociste a una sirena</p>
+        <p>De esas que dicen te quiero si ven la cartera llena</p>
+        <p>Escogiste la más guapa y a la menos buena</p>
+        <p class="ref">Sin saber como ha venido te ha cogido la tormenta</p>
+    </div>
+
+    <div id="caja5" class="caja">
+        <p>Después de un invierno malo, una mala primavera</p>
+        <p>Dime por que estas buscando una lágrima en la arena</p>
+        <p class="ref">Después de un invierno malo</p>
+    </div>
+
+    <p></p>
+    <a id="abrir" href="#miModal">Fuentes</a>
+
+<div id="miModal" class="modal">
+  <div class="contenido">
+    <a href="#">X</a>
+    <h2>Fito y fitipaldis</h2>
+    <a HREF="https://www.letras.com/fito-fitipaldis/614056/"> Letra  </a>
+  </div>  
+</div>
+
+
+          
+</body>
+</html
